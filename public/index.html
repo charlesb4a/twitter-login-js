@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter Auth Example App</title>
+</head>
+<body>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+  window.onload = function () {
+    axios.post('/twitter-auth')
+      .then(function (response) {
+        console.log(response, response.data.redirectURL);
+        window.location.href = response.data.redirectURL;
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+</script>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "twitter-js-parse-server-example",
+  "version": "1.0.0",
+  "main": "app.js",
+  "keywords": [],
+  "author": "Lucas Alencar",
+  "license": "ISC",
+  "dependencies": {
+    "express-session": "^1.16.2",
+    "oauth": "^0.9.15"
+  }
+}
